@@ -1,0 +1,23 @@
+Started by user [8mha:////4L311IKFdOs2WB2UdDup1rnZXltzOPIovI7Z2cmqyw+JAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/dLi1CL9gvz8orzErBRLEwDDnfAkxQAAAA==[0mpoorna
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/cprog
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/cprog/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/poornajd94/jenkintest.git # timeout=10
+Fetching upstream changes from https://github.com/poornajd94/jenkintest.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/poornajd94/jenkintest.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 7e20b38789de110f7e090ababc3c912462a3d045 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7e20b38789de110f7e090ababc3c912462a3d045 # timeout=10
+Commit message: "c files"
+ > git rev-list --no-walk 7e20b38789de110f7e090ababc3c912462a3d045 # timeout=10
+[cprog] $ /bin/sh -xe /tmp/jenkins1761337935629493804.sh
++ cd /var/lib/jenkins/workspace/cprog
++ make
+make: 'poorna.exe' is up to date.
+Finished: SUCCESS

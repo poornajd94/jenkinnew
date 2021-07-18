@@ -1,0 +1,13 @@
+Started on Jul 18, 2021 3:40:10 AM
+Started by event from 140.82.115.154 ⇒ http://3.143.228.42:8082/github-webhook/ on Sun Jul 18 03:40:10 UTC 2021
+Using strategy: Default
+[poll] Last Built Revision: Revision e4ce231adda59770baef3cba50976baf7d45d13b (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git ls-remote -h -- https://github.com/poornajd94/jenkintest.git # timeout=10
+Found 1 remote heads on https://github.com/poornajd94/jenkintest.git
+[poll] Latest remote head revision on refs/heads/master is: be87433478ee9a8a9988f90e9bfde0866e66b7e9
+Done. Took 0.12 sec
+Changes found

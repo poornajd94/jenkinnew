@@ -1,0 +1,24 @@
+Started by user [8mha:////4L311IKFdOs2WB2UdDup1rnZXltzOPIovI7Z2cmqyw+JAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/dLi1CL9gvz8orzErBRLEwDDnfAkxQAAAA==[0mpoorna
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/cprog
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/cprog/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/poornajd94/ctest.git # timeout=10
+Fetching upstream changes from https://github.com/poornajd94/ctest.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/poornajd94/ctest.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 03ced0330308d6d9f3a65baa94560299f2f90f57 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 03ced0330308d6d9f3a65baa94560299f2f90f57 # timeout=10
+Commit message: "delete"
+ > git rev-list --no-walk 03ced0330308d6d9f3a65baa94560299f2f90f57 # timeout=10
+[cprog] $ /bin/sh -xe /tmp/jenkins3055786738505528090.sh
++ cd /var/lib/jenkins/workspace/cprog
++ make
+make: *** No targets specified and no makefile found.  Stop.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,40 @@
+Started by GitHub push by poornajd94
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/cprog
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/cprog/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/poornajd94/jenkintest.git # timeout=10
+Fetching upstream changes from https://github.com/poornajd94/jenkintest.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/poornajd94/jenkintest.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision be87433478ee9a8a9988f90e9bfde0866e66b7e9 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f be87433478ee9a8a9988f90e9bfde0866e66b7e9 # timeout=10
+Commit message: "Update big3.c"
+ > git rev-list --no-walk e4ce231adda59770baef3cba50976baf7d45d13b # timeout=10
+[cprog] $ /bin/sh -xe /tmp/jenkins8373791537374129445.sh
++ cd /var/lib/jenkins/workspace/cprog
++ make
+gcc -c main.c
+main.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  main() {
+  ^~~~
+main.c: In function ‘main’:
+main.c:3:10: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+          biggest3();
+          ^~~~~~~~
+main.c:4:10: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+          factorial();
+          ^~~~~~~~~
+main.c:5:3: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+   reverse();
+   ^~~~~~~
+gcc -c fact.c
+gcc -c big3.c
+gcc -c rev.c
+gcc -o poorna.exe main.o big3.o fact.o rev.o
+Finished: SUCCESS
